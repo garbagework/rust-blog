@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blog App - Home</title>
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+</head>
+<body>
+    <h1>Welcome to the Blog App</h1>
+    <h2>Latest Posts:</h2>
+    <ul>
+        {% for post in posts %}
+        <li><a href="/post/{{ post }}">{{ post }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
